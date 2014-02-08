@@ -15,7 +15,7 @@ Currently, the system authenticates users by their phone number. Obviously, this
 
 ###Configuration
 
-The application requires two XML configuration files. These files should be placed in a database inside BaseX titled "Twilio". 
+The application requires two XML configuration files. These files should be placed in a BaseX database titled "Twilio". 
 
 The first file ("auth.xml") contains your Twilio username, password, and phone number.
 
@@ -27,7 +27,7 @@ The first file ("auth.xml") contains your Twilio username, password, and phone n
 </auth>
 ```
 
-The second file ("ids.xml") contain the contact information for members of your IVR.
+The second file ("ids.xml") contains the contact information of members of your IVR.
 
 ```xml
 <ids xmlns="http://twilio/contacts">
