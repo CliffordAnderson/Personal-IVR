@@ -7,7 +7,7 @@ A Personal Interactive Voice Response (IVR) System
 
 This goal of this project is to develop a personal Interactive Voice Response (IVR) system using [Twilio](https://www.twilio.com/) and [BaseX](http://basex.org/). Since the [Twilio API](https://www.twilio.com/docs/api) uses [TwiML](https://www.twilio.com/docs/api/twiml) to communicate with applications, it seemed natural to build a system with XQuery and a native XML database.
 
-The system uses [RESTXQ](http://exquery.github.io/exquery/exquery-restxq-specification/restxq-1.0-specification.html) to handle incoming requests. 
+The application uses [RESTXQ](http://exquery.github.io/exquery/exquery-restxq-specification/restxq-1.0-specification.html) to handle incoming requests. Responses are all valid [TwiML](https://www.twilio.com/docs/api/twiml). 
 
 ###Functionality###
 
