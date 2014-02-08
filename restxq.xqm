@@ -3,8 +3,8 @@
  : @author Clifford Anderson
  :)
 
-module namespace page = 'http://basex.org/modules/web-page';
-import module namespace twilio = 'http://twilio' at 'twilio.xqy';
+module namespace page = 'http://cliffordanderson.info/modules/twilio/restxq';
+import module namespace twilio = 'http://cliffordanderson.info/modules/twilio/twiml' at 'twilio.xqy';
 
 (:~
  : This function returns the result of a form request.
