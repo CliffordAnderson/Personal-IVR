@@ -20,7 +20,7 @@ The application requires two XML configuration files. These files should be plac
 The first file ("auth.xml") contains your Twilio username, password, and phone number.
 
 ```xml
-<auth xmlns="http://cliffordanderson.info/modules/auth">
+<auth xmlns="http://cliffordanderson.info/modules/twilio/auth">
     <userName>##################</userName>
     <password>##################</password>
     <phoneNumber>##########</phoneNumber>
@@ -30,7 +30,7 @@ The first file ("auth.xml") contains your Twilio username, password, and phone n
 The second file ("ids.xml") contains the contact information of members of your IVR.
 
 ```xml
-<ids xmlns="http://cliffordanderson.info/modules/contacts">
+<ids xmlns="http://cliffordanderson.info/modules/twilio/contacts">
     <phone number="+1##########" option="1">
         <name>####</name>
     </phone>
