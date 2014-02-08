@@ -1,9 +1,9 @@
 xquery version "3.0";
 
-module namespace twilio = "http://twilio";
+module namespace twilio = "http://cliffordanderson.info/modules/twilio/twiml";
 
-declare namespace contacts = "http://twilio/contacts";
-declare namespace auth = "http://twilio/auth";
+declare namespace contacts = "http://cliffordanderson.info/modules/twilio/contacts";
+declare namespace auth = "http://cliffordanderson.info/modules/auth";
 
 declare variable $twilio:userName as xs:string := 
     fn:string(fn:doc("twilio/auth.xml")//auth:userName/text());
