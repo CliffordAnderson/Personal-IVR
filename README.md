@@ -7,13 +7,19 @@ A Personal Interactive Voice Response (IVR) System
 
 This goal of this project is to develop a personal Interactive Voice Response (IVR) system using [Twilio](https://www.twilio.com/) and [BaseX](http://basex.org/). Since the [Twilio API](https://www.twilio.com/docs/api) uses [TwiML](https://www.twilio.com/docs/api/twiml) to communicate with applications, it seemed natural to build a system with XQuery and a native XML database.
 
+The system uses [RESTXQ](http://exquery.github.io/exquery/exquery-restxq-specification/restxq-1.0-specification.html) to handle incoming requests. 
+
+###Functionality###
+
+Currently, the system authenticates users by their phone number. Obviously, this presents a problem if you call in from a different number. Once authenticated, users can select from the list of contacts and then opt to either to call them or to send them a text message. A third option–to leave a message–is not yet implemented.
+
 ###Configuration
 
-The application requires two XML configuration files. These should be placed in a folder titled "Twilio". 
+The application requires two XML configuration files. These files should be placed in a database inside BaseX titled "Twilio". 
 
 The first file ("auth.xml") contains your Twilio username, password, and phone number.
 
-```
+```xml
 <auth xmlns="http://twilio/auth">
     <userName>##################</userName>
     <password>##################</password>
@@ -23,7 +29,7 @@ The first file ("auth.xml") contains your Twilio username, password, and phone n
 
 The second file ("ids.xml") contain the contact information for members of your IVR.
 
-```
+```xml
 <ids xmlns="http://twilio/contacts">
     <phone number="+1##########" option="1">
         <name>####</name>
