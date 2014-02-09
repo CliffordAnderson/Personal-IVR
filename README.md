@@ -11,11 +11,11 @@ The application uses [RESTXQ](http://exquery.github.io/exquery/exquery-restxq-sp
 
 ###Functionality###
 
-Currently, the system authenticates users by their phone number. Obviously, this presents a problem if you call in from a different number. Once authenticated, users can select from the list of contacts and then opt to either to call them or to send them a text message. A third option–to leave a message–is not yet implemented.
+Currently, the system authenticates users by their phone number. Obviously, this presents a problem if you call in from a different number. Once authenticated, users can select from the list of contacts and then opt either to call them or to send them a text message. A third option–to leave a message–is not yet implemented.
 
 ###Configuration
 
-The application requires two XML configuration files. These files should be placed in a BaseX database titled "Twilio". 
+The application requires two XML configuration files. These files should be placed in a BaseX database called "Twilio". 
 
 The first file ("auth.xml") contains your Twilio username, password, and phone number.
 
